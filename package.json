@@ -1,0 +1,17 @@
+{
+  "name": "legal-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "Sagor Majomder",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

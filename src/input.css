@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+:root {
+  --color-gray-dark-1: #111111;
+  --color-gray-dark-2: #414040;
+  --color-gray-dark-3: #707070;
+}
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-garamond: 'EB Garamond', serif;
+  --default-font-family: var(--font-poppins), var(--font-sans);
+
+  --color-primary: #b68c5a;
+  --color-primary-dark: #927048;
+  --color-primary-light: #c5a37b;
+}
+
+@layer base {
+  body {
+    color: var(--color-gray-dark-3);
+    max-width: 71.25rem;
+    margin: 0 auto;
+  }
+}
+
+@layer components {
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary,
+  .heading-quaternary {
+    color: var(--color-gray-dark-2);
+    @apply font-garamond font-extrabold;
+  }
+
+  .heading-primary {
+    @apply text-white text-7xl;
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+  .heading-quaternary {
+    @apply text-2xl;
+  }
+
+  .btn {
+    @apply bg-primary px-5 py-2.5 rounded-md text-white;
+  }
+}
