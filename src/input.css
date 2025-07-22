@@ -19,6 +19,13 @@
 }
 
 @layer components {
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+      url(./src/images/banner.png);
+
+    @apply flex flex-col text-center items-center justify-center bg-cover sm:bg-center bg-position-[90%] bg-no-repeat lg:h-[31.25rem] py-14 rounded-md mb-14 w-full px-2.5;
+  }
+
   .heading-primary,
   .heading-secondary,
   .heading-tertiary,
@@ -28,20 +35,22 @@
   }
 
   .heading-primary {
-    @apply text-white text-7xl;
+    @apply text-white lg:text-7xl md:text-5xl text-4xl;
   }
+}
 
-  .heading-secondary {
-    font-size: 2.5rem;
-  }
-  .heading-tertiary {
-    font-size: 2rem;
-  }
-  .heading-quaternary {
-    @apply text-2xl;
-  }
+@utility heading-secondary {
+  font-size: 2.5rem;
+}
 
-  .btn {
-    @apply bg-primary px-5 py-2.5 rounded-md text-white;
-  }
+@utility heading-tertiary {
+  font-size: 2rem;
+}
+
+@utility heading-quaternary {
+  @apply text-2xl;
+}
+
+@utility btn {
+  @apply bg-primary px-5 py-2.5 rounded-md text-white transition duration-500 hover:bg-primary-dark;
 }

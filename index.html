@@ -14,14 +14,16 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body
-    class="min-h-screen text-(color:--color-gray-dark-3) max-w-6xl mx-auto px-6">
-    <header>
+    class="min-h-screen text-(color:--color-gray-dark-3) max-w-6xl mx-auto px-6 text-xs md:text-sm lg:text-base">
+    <!-- Header -->
+    <header class="mb-4">
       <nav class="flex gap-4 justify-between items-center py-8">
         <img
           class="-translate-1"
           src="./src/images/logo2.png"
           alt="Header Logo" />
 
+        <!-- Menu -->
         <ul class="lg:flex items-center gap-6 hidden">
           <li class="text-primary">
             <a href="#">Home</a>
@@ -91,20 +93,13 @@
             </svg>
           </li>
 
-          <a
-            class="btn transition duration-500 hover:bg-primary-dark ml-auto md:hidden"
-            href="#"
-            >Free consultation</a
-          >
+          <a class="btn ml-auto md:hidden" href="#">Free consultation</a>
         </ul>
 
         <div class="ml-auto lg:ml-0 flex gap-10 items-center">
-          <a
-            class="btn transition duration-500 hover:bg-primary-dark hidden xs:block"
-            href="#"
-            >Free consultation</a
-          >
+          <a class="btn hidden xs:block" href="#">Free consultation</a>
 
+          <!-- Mobile Menu Button -->
           <button class="lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,5 +117,27 @@
         </div>
       </nav>
     </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="xs:max-w-4/5 lg:max-w-3/4 text-white space-y-10 max-w-full">
+          <h1 class="heading-primary">We Provide Effective Legal Solutions</h1>
+          <p class="md:px-12">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-5 justify-center items-center px-4">
+            <input
+              class="py-3 px-2.5 basis-3/4 w-full bg-white rounded-md focus:outline-2 outline-primary text-(--color-gray-dark-3)"
+              type="text"
+              placeholder="Search your service" />
+            <button class="btn w-full sm:w-auto">Search</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
