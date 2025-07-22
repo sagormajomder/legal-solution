@@ -7,6 +7,8 @@
 }
 
 @theme {
+  --breakpoint-xs: 30rem;
+
   --font-poppins: 'Poppins', sans-serif;
   --font-garamond: 'EB Garamond', serif;
   --default-font-family: var(--font-poppins), var(--font-sans);
@@ -14,14 +16,6 @@
   --color-primary: #b68c5a;
   --color-primary-dark: #927048;
   --color-primary-light: #c5a37b;
-}
-
-@layer base {
-  body {
-    color: var(--color-gray-dark-3);
-    max-width: 71.25rem;
-    margin: 0 auto;
-  }
 }
 
 @layer components {

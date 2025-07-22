@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch"
+    "tailwindcss": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch",
+    "devServer": "live-server",
+    "start": "concurrently  \"npm run devServer\" \"npm run tailwindcss\""
   },
   "keywords": [],
   "author": "Sagor Majomder",
@@ -13,5 +15,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
   }
 }

@@ -13,17 +13,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body
+    class="min-h-screen text-(color:--color-gray-dark-3) max-w-6xl mx-auto px-6">
     <header>
-      <nav class="flex justify-between items-center py-4">
+      <nav class="flex gap-4 justify-between items-center py-8">
         <img
           class="-translate-1"
           src="./src/images/logo2.png"
           alt="Header Logo" />
 
-        <ul class="flex items-center gap-6">
-          <li><a href="#">Home</a></li>
-          <li class="flex items-center">
+        <ul class="lg:flex items-center gap-6 hidden">
+          <li class="text-primary">
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="flex items-center hover:text-primary transition duration-700">
             <a href="#">Services</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +42,8 @@
                 d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </li>
-          <li class="flex items-center">
+          <li
+            class="flex items-center hover:text-primary transition duration-700">
             <a href="#">Cases</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +58,8 @@
                 d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </li>
-          <li class="flex items-center">
+          <li
+            class="flex items-center hover:text-primary transition duration-700">
             <a href="#">Blog</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +74,8 @@
                 d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </li>
-          <li class="flex items-center">
+          <li
+            class="flex items-center hover:text-primary transition duration-700">
             <a href="#">Contact Us</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,9 +90,36 @@
                 d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </li>
+
+          <a
+            class="btn transition duration-500 hover:bg-primary-dark ml-auto md:hidden"
+            href="#"
+            >Free consultation</a
+          >
         </ul>
 
-        <a class="btn" href="#">Free consultation</a>
+        <div class="ml-auto lg:ml-0 flex gap-10 items-center">
+          <a
+            class="btn transition duration-500 hover:bg-primary-dark hidden xs:block"
+            href="#"
+            >Free consultation</a
+          >
+
+          <button class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
   </body>
