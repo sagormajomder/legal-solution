@@ -26,6 +26,11 @@
     @apply flex flex-col text-center items-center justify-center bg-cover sm:bg-center bg-position-[90%] bg-no-repeat lg:h-[31.25rem] py-14 rounded-md mb-14 w-full px-2.5;
   }
 
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    @apply grid gap-10 justify-start;
+  }
+
   .heading-primary,
   .heading-secondary,
   .heading-tertiary,
@@ -40,15 +45,15 @@
 }
 
 @utility heading-secondary {
-  font-size: 2.5rem;
+  @apply text-3xl md:text-4xl lg:text-[2.5rem];
 }
 
 @utility heading-tertiary {
-  font-size: 2rem;
+  @apply text-2xl md:text-3xl lg:text-[2rem];
 }
 
 @utility heading-quaternary {
-  @apply text-2xl;
+  @apply text-sm md:text-base lg:text-2xl;
 }
 
 @utility btn {
