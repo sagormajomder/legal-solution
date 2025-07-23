@@ -59,3 +59,7 @@
 @utility btn {
   @apply bg-primary px-5 py-2.5 rounded-md text-white transition duration-500 hover:bg-primary-dark;
 }
+
+@utility my-container {
+  @apply max-w-6xl mx-auto px-6 lg:px-0;
+}
