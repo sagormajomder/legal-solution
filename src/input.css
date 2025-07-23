@@ -26,11 +26,6 @@
     @apply flex flex-col text-center items-center justify-center bg-cover sm:bg-center bg-position-[90%] bg-no-repeat lg:h-[31.25rem] py-14 rounded-md mb-14 w-full px-2.5;
   }
 
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-    @apply grid gap-10 justify-start;
-  }
-
   .heading-primary,
   .heading-secondary,
   .heading-tertiary,

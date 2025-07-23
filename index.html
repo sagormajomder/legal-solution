@@ -134,7 +134,7 @@
               class="py-3 px-2.5 basis-3/4 w-full bg-white rounded-md focus:outline-2 outline-primary text-(--color-gray-dark-3)"
               type="text"
               placeholder="Search your service" />
-            <button class="btn w-full sm:w-auto">Search</button>
+            <button class="btn w-full sm:w-auto cursor-pointer">Search</button>
           </div>
         </div>
       </section>
@@ -148,9 +148,11 @@
             representation.
           </p>
         </div>
-        <div class="cards">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-start">
+          <!-- Practice 1 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-b sm:border-r border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -163,10 +165,14 @@
                 resolves disputes between businesses and consumers.
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
+          <!-- Practice 2 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-b lg:border-r border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -179,10 +185,14 @@
                 justice through fair trial and punishment.
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
+          <!-- Practice 3 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-b sm:border-r lg:border-r-0 border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -195,10 +205,14 @@
                 healthcare, ensuring both parents share responsibility.
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
+          <!-- Practice 4 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-b lg:border-b-0 lg:border-r border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -212,10 +226,14 @@
                 educators.
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
+          <!-- Practice 5 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-b sm:border-r sm:border-b-0 border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -228,10 +246,14 @@
                 jurisdiction, balancing rights and responsibilities of spouses.
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
+          <!-- Practice 6 -->
           <div
-            class="flex flex-col items-center justify-between text-center gap-5 xs:p-5">
+            class="flex flex-col items-center justify-between text-center gap-5 xs:px-5 border-[#E7E7E7] py-10">
             <div class="flex flex-col items-center gap-5">
               <img
                 class="h-14"
@@ -244,7 +266,10 @@
                 equitable distribution of fiscal responsibilities
               </p>
             </div>
-            <img src="./src/images/Frame.png" alt="Right Arrow" />
+            <img
+              class="cursor-pointer"
+              src="./src/images/Frame.png"
+              alt="Right Arrow" />
           </div>
         </div>
       </section>
@@ -261,7 +286,7 @@
 
         <!-- feedback -->
         <div
-          class="bg-[url(./src/images/banner.png)] bg-no-repeat bg-black/70 bg-cover bg-position-[90%] lg:bg-center bg-blend-darken flex flex-col items-center text-center justify-center text-white gap-4 rounded-md py-14 md:h-[31.25rem] relative">
+          class="bg-[url(./src/images/banner.png)] bg-no-repeat bg-black/70 bg-cover bg-position-[90%] lg:bg-center bg-blend-darken flex flex-col items-center text-center justify-center text-white gap-5 rounded-md py-14 md:h-[31.25rem] relative">
           <img
             class="w-14"
             src="./src/images/client.png"
@@ -278,14 +303,19 @@
             mind. I highly recommend their services for any legal matter.
           </p>
 
-          <div class="flex gap-2">
-            <div class="sm:w-10 w-6 h-0.5 bg-white/50 rounded-md"></div>
-            <div class="sm:w-10 w-6 h-0.5 bg-white rounded-md"></div>
-            <div class="sm:w-10 w-6 h-0.5 bg-white/50 rounded-md"></div>
+          <!-- Slide Count no -->
+          <div class="flex gap-2 mt-10">
+            <div
+              class="cursor-pointer sm:w-10 w-6 h-0.5 bg-white/50 rounded-md"></div>
+            <div
+              class="cursor-pointer sm:w-10 w-6 h-0.5 bg-white rounded-md"></div>
+            <div
+              class="cursor-pointer sm:w-10 w-6 h-0.5 bg-white/50 rounded-md"></div>
           </div>
 
           <!-- next button -->
-          <div class="absolute top-1/2 right-4 sm:right-[6%] translate-1/2">
+          <div
+            class="absolute top-1/2 right-4 sm:right-[6%] translate-1/2 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -300,7 +330,8 @@
             </svg>
           </div>
           <!-- before button -->
-          <div class="absolute top-1/2 -left-1.5 sm:left-[4%] translate-1/2">
+          <div
+            class="absolute top-1/2 -left-1.5 sm:left-[4%] translate-1/2 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -441,7 +472,7 @@
           <div class="grid xs:grid-cols-2 bg-[#F3F3F3] basis-[48%]">
             <!-- box 1 -->
             <div
-              class="flex flex-col items-center gap-3 py-14 sm:max-md:py-8 lg:py-14 px-2.5 xs:border-r border-b border-[#CFCFCF]">
+              class="flex flex-col items-center gap-3 py-14 sm:max-md:py-8 lg:py-14 px-2.5 sm:border-r border-b border-[#CFCFCF]">
               <img
                 class="h-10 w-10"
                 src="./src/images/location.png"
@@ -497,28 +528,31 @@
             class="flex flex-col justify-between gap-5 basis-[48%]"
             action="#">
             <input
-              class="py-4 px-3 rouded-md bg-[#F3F3F3] focus:outline-primary"
+              class="py-4 px-3 rounded-md bg-[#F3F3F3] focus:outline-primary"
               type="text"
               placeholder="Your Name" />
             <input
-              class="py-4 px-3 rouded-md bg-[#F3F3F3] focus:outline-primary"
+              class="py-4 px-3 rounded-md bg-[#F3F3F3] focus:outline-primary"
               type="email"
               name=""
               id=""
               placeholder="Your Email" />
             <input
-              class="py-4 px-3 rouded-md bg-[#F3F3F3] focus:outline-primary"
+              class="py-4 px-3 rounded-md bg-[#F3F3F3] focus:outline-primary"
               type="text"
               name=""
               id=""
               placeholder="Subject" />
             <textarea
-              class="py-4 px-3 rouded-md bg-[#F3F3F3] focus:outline-primary"
+              class="py-4 px-3 rounded-md bg-[#F3F3F3] focus:outline-primary"
               name=""
               id=""
               rows="6"
               placeholder="Your Message"></textarea>
-            <input class="btn" type="submit" value="Send Message" />
+            <input
+              class="btn cursor-pointer"
+              type="submit"
+              value="Send Message" />
           </form>
         </div>
       </section>
@@ -545,23 +579,19 @@
           class="grid grid-rows-[repeat(2,minmax(5rem,max-content))] items-start">
           <h4 class="heading-quaternary text-white">Useful Links</h4>
           <ul class="flex flex-col items-start gap-2.5">
-            <li class="text-primary">
+            <li class="hover:text-primary transition duration-700">
               <a href="#">Home</a>
             </li>
-            <li
-              class="flex items-center hover:text-primary transition duration-700">
+            <li class="hover:text-primary transition duration-700">
               <a href="#">Services</a>
             </li>
-            <li
-              class="flex items-center hover:text-primary transition duration-700">
+            <li class="hover:text-primary transition duration-700">
               <a href="#">Cases</a>
             </li>
-            <li
-              class="flex items-center hover:text-primary transition duration-700">
+            <li class="hover:text-primary transition duration-700">
               <a href="#">Blog</a>
             </li>
-            <li
-              class="flex items-center hover:text-primary transition duration-700">
+            <li class="hover:text-primary transition duration-700">
               <a href="#">Contact Us</a>
             </li>
           </ul>
@@ -595,12 +625,12 @@
             </p>
             <div class="flex">
               <input
-                class="py-4 px-3 rouded-md bg-[#F3F3F3] focus:outline-primary basis-3/4"
+                class="py-4 px-3 rounded-md bg-[#F3F3F3] focus:outline-primary basis-3/4 text-(color:--color-gray-dark-3)"
                 type="email"
                 name=""
                 id=""
                 placeholder="Email Address" />
-              <a class="btn -translate-x-1" href="#">
+              <a class="btn -translate-x-3" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
