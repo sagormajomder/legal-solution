@@ -61,5 +61,5 @@
 }
 
 @utility my-container {
-  @apply max-w-6xl mx-auto px-6 lg:px-0;
+  @apply max-w-6xl mx-auto px-6 xl:px-0;
 }
